@@ -12,11 +12,8 @@ jobs:
       - name: scanning
         uses: gitleaks/gitleaks-action@v2
         
-      - name: sast
-        run: echo "Hellow World!" 
-        
       - name: docker-image
-        run: echo "Hellow World!"
+        run: docker build -t rayeescore/cf-sysfoo .
         
       - name: docker-hub
         run: echo "Hellow World!"
