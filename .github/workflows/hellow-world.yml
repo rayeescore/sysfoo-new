@@ -6,4 +6,19 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hellow World!" 
-  
+        
+      - name: secret-scanning
+        run: echo "Hellow World!"
+        
+      - name: sast
+        run: echo "Hellow World!" 
+        
+      - name: docker-image
+        run: echo "Hellow World!"
+        
+      - name: docker-hub
+        run: echo "Hellow World!"
+        
+      - name: dast
+        run: echo "Hellow World!" 
+        
