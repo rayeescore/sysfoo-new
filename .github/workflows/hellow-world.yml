@@ -3,15 +3,14 @@ on: push
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    steps:
-      - name: my-step
-        run: echo "Hellow World!" 
-        
-      - name: secret-scanning
+    steps:        
+      - name: checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-            
+          
+      - name: scanning
+        uses: gitleaks/gitleaks-action@v2
         
       - name: sast
         run: echo "Hellow World!" 
